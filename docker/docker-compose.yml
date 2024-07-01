@@ -2,13 +2,13 @@ version: "3.3"
 
 services:
   frontend:
-    image: taskingai/taskingai-console:v0.3.0
+    image: cpluspluscloud/taskingai-console-proxy:v0.3.0
     depends_on:
       - backend-web
       - backend-api
 
   backend-inference:
-    image: taskingai/taskingai-inference:v0.2.14
+    image: cpluspluscloud/taskingai-inference-proxy:v0.2.14
     environment:
       AES_ENCRYPTION_KEY: ${AES_ENCRYPTION_KEY}
       ICON_URL_PREFIX: ${HOST_URL}
@@ -20,7 +20,7 @@ services:
       retries: 5
 
   backend-plugin:
-    image: taskingai/taskingai-plugin:v0.2.10
+    image: cpluspluscloud/taskingai-plugin-proxy:v0.2.10
     environment:
       AES_ENCRYPTION_KEY: ${AES_ENCRYPTION_KEY}
       ICON_URL_PREFIX: ${HOST_URL}
@@ -42,7 +42,7 @@ services:
       retries: 5
 
   backend-api:
-    image: taskingai/taskingai-server:v0.3.0
+    image: cpluspluscloud/taskingai-server-proxy:v0.3.0
     environment:
       POSTGRES_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       REDIS_URL: redis://:${REDIS_PASSWORD}@cache:6379/${REDIS_DB}
@@ -72,7 +72,7 @@ services:
       retries: 5
 
   backend-web:
-    image: taskingai/taskingai-server:v0.3.0
+    image: cpluspluscloud/taskingai-server-proxy:v0.3.0
     environment:
       POSTGRES_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
       REDIS_URL: redis://:${REDIS_PASSWORD}@cache:6379/${REDIS_DB}

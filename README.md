@@ -2,6 +2,29 @@
 <a href="https://www.tasking.ai"><img src="static/img/logo.png" alt="https://www.tasking.ai"></a>
 </p>
 
+# 为中国宝宝提供的TaskingAI
+
+
+## 使用指南免去VPN即可使用
+
+本仓库的TaskingAI内置OPENAI_BASE_URL
+请认准
+```
+https://aiclound.vip
+```
+使用openai模型，只需要前往https://aiclound.vip获取key,输入即可
+![alt text](image.png)
+价格实惠，量大可优惠
+![alt text](image-1.png)
+## 安装指南
+
+```
+git clone https://github.com/cppcloud/TaskingAI.git
+cd TaskingAI/docker
+cp .env.example .env
+docker-compose -p taskingai --env-file .env up -d
+```
+
 # TaskingAI
 
 <p align="center">
@@ -94,67 +117,6 @@ Please give us a **FREE STAR 🌟** if you find it helpful 😇
 </p>
 
 ---
-
-## Quickstart with Docker
-
-A simple way to initiate self-hosted TaskingAI community edition is through [Docker](https://www.docker.com/).
-
-### Prerequisites
-
-- Docker and Docker Compose installed on your machine.
-- Git installed for cloning the repository.
-- Python environment (above Python 3.8) for running the client SDK.
-
-### Installation
-
-First, clone the TaskingAI (community edition) repository from GitHub.
-
-```bash
-git clone https://github.com/taskingai/taskingai.git
-cd taskingai
-```
-
-Inside the cloned repository, go to the docker directory.
-
-```bash
-cd docker
-```
-
-1. **Copy `.env.example` to `.env`**:
-
-   ```sh
-   cp .env.example .env
-   ```
-
-2. **Edit the `.env` file**:
-   Open the `.env` file in your favorite text editor and update the necessary configurations. Ensure all required environment variables are set correctly.
-
-3. **Start Docker Compose**:
-   Run the following command to start all services:
-   ```sh
-   docker-compose -p taskingai --env-file .env up -d
-   ```
-
-Once the service is up, access the TaskingAI console through your browser with the URL http://localhost:8080. The default username and password are `admin` and `TaskingAI321`.
-
-### Upgrade
-
-If you have already installed TaskingAI with a previous version and want to upgrade to the latest version, first update the repository.
-
-```bash
-git pull origin master
-```
-
-Then stop the current docker service, upgrade to the latest version by pulling the latest image, and finally restart the service.
-
-```bash
-cd docker
-docker-compose -p taskingai down
-docker-compose -p taskingai pull
-docker-compose -p taskingai --env-file .env up -d
-```
-
-Don't worry about data loss; your data will be automatically migrated to the latest version schema if needed.
 
 ### TaskingAI UI Console
 
