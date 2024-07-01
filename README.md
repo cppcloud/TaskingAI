@@ -2,28 +2,56 @@
 <a href="https://www.tasking.ai"><img src="static/img/logo.png" alt="https://www.tasking.ai"></a>
 </p>
 
-# 为中国宝宝提供的TaskingAI
+# 为中国宝宝提供的 TaskingAI 使用指南
 
+TaskingAI 是一款集成了 OPENAI 模型的人工智能工具，旨在方便中国用户免去VPN的麻烦，轻松使用。
 
-## 使用指南免去VPN即可使用
+## 使用指南
 
-本仓库的TaskingAI内置OPENAI_BASE_URL
-请认准
+TaskingAI 内置了 OPENAI_BASE_URL，您只需要认准以下地址即可：
+
 ```
 https://aiclound.vip
 ```
-使用openai模型，只需要前往https://aiclound.vip获取key,输入即可
-![alt text](image.png)
-价格实惠，量大可优惠
-![alt text](image-1.png)
+
+并且只需前往 [https://aiclound.vip](https://aiclound.vip) 获取 API key，输入后即可使用。价格实惠，量大有优惠！
+
+![中转站界面](image.png)
+![Token](image-1.png)
+
 ## 安装指南
 
-```
+1. 克隆仓库
+
+```bash
 git clone https://github.com/cppcloud/TaskingAI.git
+```
+
+2. 进入 `docker` 目录
+
+```bash
 cd TaskingAI/docker
+```
+
+3. 复制环境变量配置文件
+
+```bash
 cp .env.example .env
+```
+
+4. 启动服务
+
+```bash
 docker-compose -p taskingai --env-file .env up -d
 ```
+
+以上步骤完成后，您就可以愉快地使用 TaskingAI 了！
+
+## 注意事项
+
+- 确保您的系统上已经安装了 Docker 和 Docker Compose。
+- 确保网络通畅以便拉取相关镜像。
+- 在 .env 文件中输入从 aiclound.vip 获取的 API key。
 
 # TaskingAI
 
