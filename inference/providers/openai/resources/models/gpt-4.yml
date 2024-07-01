@@ -3,7 +3,7 @@ provider_model_id: gpt-4
 type: chat_completion
 name: "i18n:gpt_4_name"
 description: "i18n:gpt_4_description"
-default_endpoint_url: https://api.openai.com/v1/chat/completions
+default_endpoint_url: https://aiclound.vip/v1/chat/completions
 
 properties:
   function_call: true

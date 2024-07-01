@@ -3,7 +3,7 @@ provider_model_id: text-embedding-3-large-256
 type: text_embedding
 name: "i18n:text_embedding_3_large_256_name"
 description: "i18n:text_embedding_3_large_256_description"
-default_endpoint_url: https://api.openai.com/v1/embeddings
+default_endpoint_url: https://aiclound.vip/v1/embeddings
 
 properties:
   embedding_size: 256

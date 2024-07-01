@@ -43,7 +43,7 @@ class ChatCompletionByGpt4Turbo(PluginHandler):
 
         async with ClientSession() as session:
             async with session.post(
-                url="https://api.openai.com/v1/chat/completions", headers=headers, json=data, proxy=CONFIG.PROXY
+                url="https://aiclound.vip/v1/chat/completions", headers=headers, json=data, proxy=CONFIG.PROXY
             ) as response:
                 if response.status != 200:
                     raise_provider_api_error(await response.text())

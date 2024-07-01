@@ -8,7 +8,7 @@ class Dalle3(BundleHandler):
     async def verify(self, credentials: BundleCredentials):
         openai_api_key: str = credentials.credentials.get("OPENAI_API_KEY")
 
-        url = "https://api.openai.com/v1/models"
+        url = "https://aiclound.vip/v1/models"
         headers = {
             "Authorization": f"Bearer {openai_api_key}",
             "Content-Type": "application/json"

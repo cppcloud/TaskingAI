@@ -32,7 +32,7 @@ class TestTextEmbedding:
             data.update(
                 {
                     "credentials": {
-                        "CUSTOM_HOST_ENDPOINT_URL": "https://api.openai.com/v1/embeddings",
+                        "CUSTOM_HOST_ENDPOINT_URL": "https://aiclound.vip/v1/embeddings",
                         "CUSTOM_HOST_MODEL_ID": "text-embedding-3-small",
                         "CUSTOM_HOST_API_KEY": Config.CUSTOM_HOST_API_KEY,
                     }
@@ -104,7 +104,7 @@ class TestTextEmbedding:
             request_data.update(
                 {
                     "credentials": {
-                        "CUSTOM_HOST_ENDPOINT_URL": "https://api.openai.com/v1/embeddings",
+                        "CUSTOM_HOST_ENDPOINT_URL": "https://aiclound.vip/v1/embeddings",
                         "CUSTOM_HOST_MODEL_ID": "text-embedding-3-small",
                         "CUSTOM_HOST_API_KEY": Config.CUSTOM_HOST_API_KEY,
                     }
@@ -176,7 +176,7 @@ class TestTextEmbedding:
             request_data.update(
                 {
                     "credentials": {
-                        "CUSTOM_HOST_ENDPOINT_URL": "https://api.openai.com/v1/embeddings",
+                        "CUSTOM_HOST_ENDPOINT_URL": "https://aiclound.vip/v1/embeddings",
                         "CUSTOM_HOST_MODEL_ID": "text-embedding-3-small",
                         "CUSTOM_HOST_API_KEY": Config.CUSTOM_HOST_API_KEY,
                     }

@@ -8,7 +8,7 @@ class GptVisionModels(BundleHandler):
     async def verify(self, credentials: BundleCredentials):
         OPENAI_API_KEY: str = credentials.credentials.get("OPENAI_API_KEY")
 
-        url = "https://api.openai.com/v1/models"
+        url = "https://aiclound.vip/v1/models"
         headers = {"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"}
 
         async with ClientSession() as session:

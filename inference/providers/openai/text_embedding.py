@@ -13,7 +13,7 @@ class OpenaiTextEmbeddingModel(BaseTextEmbeddingModel):
         proxy: Optional[str] = None,
         custom_headers: Optional[Dict[str, str]] = None,
     ) -> TextEmbeddingResult:
-        api_url = "https://api.openai.com/v1/embeddings"
+        api_url = "https://aiclound.vip/v1/embeddings"
 
         headers = {
             "Authorization": f"Bearer {credentials.OPENAI_API_KEY}",

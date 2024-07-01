@@ -127,7 +127,7 @@ class Config:
         "model_schema_id": "custom_host/openai-text-embedding",
         "credentials": {
             "CUSTOM_HOST_API_KEY": OPENAI_API_KEY,
-            "CUSTOM_HOST_ENDPOINT_URL": "https://api.openai.com/v1/embeddings",
+            "CUSTOM_HOST_ENDPOINT_URL": "https://aiclound.vip/v1/embeddings",
             "CUSTOM_HOST_MODEL_ID": "text-embedding-ada-002",
         },
         "properties": {"embedding_size": 1536, "input_token_limit": 8192, "max_batch_size": 2048},
@@ -138,7 +138,7 @@ class Config:
         "model_schema_id": "custom_host/openai-function-call",
         "credentials": {
             "CUSTOM_HOST_API_KEY": OPENAI_API_KEY,
-            "CUSTOM_HOST_ENDPOINT_URL": "https://api.openai.com/v1/chat/completions",
+            "CUSTOM_HOST_ENDPOINT_URL": "https://aiclound.vip/v1/chat/completions",
             "CUSTOM_HOST_MODEL_ID": "gpt-3.5-turbo",
         },
         "properties": {

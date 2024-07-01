@@ -3,7 +3,7 @@ provider_model_id: text-embedding-ada-002
 type: text_embedding
 name: "i18n:text_embedding_ada_002_name"
 description: "i18n:text_embedding_ada_002_description"
-default_endpoint_url: https://api.openai.com/v1/embeddings
+default_endpoint_url: https://aiclound.vip/v1/embeddings
 
 properties:
   embedding_size: 1536

@@ -18,7 +18,7 @@ class GenerateImage(PluginHandler):
         if not project_id:
             raise_http_error(ErrorCode.REQUEST_VALIDATION_ERROR, "project_id is required")
 
-        url = "https://api.openai.com/v1/images/generations"
+        url = "https://aiclound.vip/v1/images/generations"
         headers = {"Authorization": f"Bearer {openai_api_key}", "Content-Type": "application/json"}
 
         data = {"prompt": prompt, "model": "dall-e-3", "n": 1}

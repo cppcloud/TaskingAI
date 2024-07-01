@@ -116,7 +116,7 @@ class OpenaiChatCompletionModel(BaseChatCompletionModel):
         functions: Optional[List[ChatCompletionFunction]] = None,
     ) -> Tuple[str, Dict, Dict]:
         # todo accept user's api_url
-        api_url = "https://api.openai.com/v1/chat/completions"
+        api_url = "https://aiclound.vip/v1/chat/completions"
         headers = build_openai_header(credentials)
         payload = _build_openai_chat_completion_payload(
             messages, stream, provider_model_id, configs, function_call, functions
